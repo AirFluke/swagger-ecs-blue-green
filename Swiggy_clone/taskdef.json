@@ -6,7 +6,7 @@
   "containerDefinitions": [
     {
       "name": "your-container-name",
-      "image": "<IMAGE1_NAME>",
+      "image": "airfluke/swiggy-clone:3f7eef9",
       "portMappings": [
         {
           "containerPort": 80,
