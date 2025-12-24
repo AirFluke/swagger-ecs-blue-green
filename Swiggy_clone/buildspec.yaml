@@ -73,5 +73,6 @@ phases:
 artifacts:
   base-directory: Swiggy_clone
   files:
+    - imagedefinitions.json
     - appspec.yaml
     - taskdef.json
