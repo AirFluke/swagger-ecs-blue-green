@@ -16,8 +16,4 @@ resource "aws_ssm_parameter" "docker_password" {
   value = var.docker_password
 }
 
-resource "aws_ssm_parameter" "docker_registry_url" {
-  name  = var.docker_registry_url_name
-  type  = "String"
-  value = var.docker_registry_url
-}
+

@@ -6,7 +6,7 @@ variable "role_arn" {
   type = string
 }
 
-variable "connection_arn" {
+variable "codestar_connection_arn" {
   type = string
 }
 
@@ -28,4 +28,17 @@ variable "codedeploy_app" {
 
 variable "codedeploy_group" {
   type = string
+}
+
+variable "artifact_bucket_name" {
+  type = string
+}
+
+variable "artifact_bucket_arn" {
+  description = "ARN of the S3 bucket for artifacts"
+  type        = string
+}
+variable "codebuild_project_arn" {
+  description = "ARN of the CodeBuild project"
+  type        = string
 }

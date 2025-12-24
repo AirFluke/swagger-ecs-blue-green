@@ -9,3 +9,8 @@ output "deployment_group_name" {
 output "app_arn" {
   value = aws_codedeploy_app.ecs.arn
 }
+
+output "deployment_group_id" {
+  description = "ID of the CodeDeploy deployment group"
+  value       = aws_codedeploy_deployment_group.ecs.id
+}

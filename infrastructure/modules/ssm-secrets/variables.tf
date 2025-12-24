@@ -22,10 +22,3 @@ variable "docker_password" {
   type = string
 }
 
-variable "docker_registry_url_name" {
-  type = string
-}
-
-variable "docker_registry_url" {
-  type = string
-}
