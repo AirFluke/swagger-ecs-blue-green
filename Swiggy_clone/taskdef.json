@@ -1,12 +1,12 @@
 {
-  "family": "your-task-family",
-  "executionRoleArn": "arn:aws:iam::account:role/ecsTaskExecutionRole",
-  "taskRoleArn": "arn:aws:iam::account:role/ecsTaskRole",
+  "family": "swiggy",
+  "executionRoleArn": "arn:aws:iam::751647213649:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::751647213649:role/ecsTaskRole",
   "networkMode": "awsvpc",
   "containerDefinitions": [
     {
-      "name": "your-container-name",
-      "image": "airfluke/swiggy-clone:3f7eef9",
+      "name": "swiggy",
+      "image": "airfluke/swiggy-clone:latest",
       "portMappings": [
         {
           "containerPort": 80,
