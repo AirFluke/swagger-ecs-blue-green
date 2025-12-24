@@ -6,4 +6,4 @@ Resources:
         TaskDefinition: <TASK_DEFINITION>
         LoadBalancerInfo:
           ContainerName: "swiggy"
-          ContainerPort: 80
+          ContainerPort: 3000

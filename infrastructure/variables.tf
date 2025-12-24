@@ -31,7 +31,7 @@ variable "github_connection_arn" {
 variable "container_port" {
   description = "Port exposed by the ECS container"
   type        = number
-  default     = 80
+  default     = 3000
 }
 
 variable "sonar_token" {
