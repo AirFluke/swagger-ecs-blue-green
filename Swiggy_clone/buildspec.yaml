@@ -22,7 +22,9 @@ phases:
   build:
     commands:
       - echo "Building Docker image for linux/amd64..."
-      - docker build -t $DOCKER_REGISTRY_USERNAME/swiggy-clone:latest .
+      - export IMAGE_TAG=${IMAGE_TAG:-latest}
+      - export DOCKER_REGISTRY_USERNAME=${DOCKER_REGISTRY_USERNAME:-airfluke}
+      - docker build --platform linux/amd64 -t $DOCKER_REGISTRY_USERNAME/swiggy-clone:$IMAGE_TAG -t $DOCKER_REGISTRY_USERNAME/swiggy-clone:latest .
       - echo "Pushing Docker image..."
       - docker push $DOCKER_REGISTRY_USERNAME/swiggy-clone:$IMAGE_TAG
       - docker push $DOCKER_REGISTRY_USERNAME/swiggy-clone:latest
